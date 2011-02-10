@@ -1,0 +1,5 @@
+<decorators defaultdir="/WEB-INF/content/decorators">
+	<decorator name="main" page="main.jsp">
+          <pattern>/*</pattern>
+    </decorator>
+</decorators>

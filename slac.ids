@@ -1,0 +1,50 @@
+<?xml version="1.0"?><component name="dataSourceStorage">
+  <data-source source="LOCAL" name="slac_dev" product="MySQL" version="5.5.8" jdbc-version="4.0" driver-version="mysql-connector-java-5.1.14 ( Revision: ${bzr.revision-id} )" uuid="7541ad73-8b7f-4ae7-89e1-52e3354ed6ab">
+    <extra-name-characters>#@</extra-name-characters>
+    <identifier-quote-string>`</identifier-quote-string>
+    <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+    <jdbc-url>jdbc:mysql://localhost:3306/slac_dev</jdbc-url>
+    <user-name>root</user-name>
+    <user-password>dfc7dfd3dfd9dfdbdfc6</user-password>
+    <libraries>
+      <library>
+        <url>jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.14/mysql-connector-java-5.1.14.jar!/</url>
+      </library>
+    </libraries>
+    <table name="policies" schema="" catalog="slac_dev" type="TABLE">
+      <column name="id" sqlType="BIGINT UNSIGNED" length="20" precision="0" nullable="false" jdbcType="-5" autoIncrement="true" />
+      <column name="number" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12" />
+      <primary-key name="PRIMARY" columns="id" />
+    </table>
+    <table name="schema_version" schema="" catalog="slac_dev" type="TABLE">
+      <column name="version" sqlType="VARCHAR" length="32" precision="0" nullable="false" jdbcType="12" />
+      <column name="applied_on" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" />
+      <column name="duration" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" />
+      <index name="version" unique="true" columns="version" />
+    </table>
+  </data-source>
+  <data-source source="LOCAL" name="slac_test" product="MySQL" version="5.5.8" jdbc-version="4.0" driver-version="mysql-connector-java-5.1.14 ( Revision: ${bzr.revision-id} )" uuid="cb5a9249-a809-459f-9383-019fecfd703a">
+    <extra-name-characters>#@</extra-name-characters>
+    <identifier-quote-string>`</identifier-quote-string>
+    <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+    <jdbc-url>jdbc:mysql://localhost:3306/slac_test</jdbc-url>
+    <user-name>root</user-name>
+    <user-password>dfc7dfd3dfd9dfdbdfc6</user-password>
+    <libraries>
+      <library>
+        <url>jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.14/mysql-connector-java-5.1.14.jar!/</url>
+      </library>
+    </libraries>
+    <table name="policies" schema="" catalog="slac_test" type="TABLE">
+      <column name="id" sqlType="BIGINT UNSIGNED" length="20" precision="0" nullable="false" jdbcType="-5" autoIncrement="true" />
+      <column name="number" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12" />
+      <primary-key name="PRIMARY" columns="id" />
+    </table>
+    <table name="schema_version" schema="" catalog="slac_test" type="TABLE">
+      <column name="version" sqlType="VARCHAR" length="32" precision="0" nullable="false" jdbcType="12" />
+      <column name="applied_on" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" />
+      <column name="duration" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" />
+      <index name="version" unique="true" columns="version" />
+    </table>
+  </data-source>
+</component>
